@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Inscription</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  
+  <style>
+    .succes, .erreur {
+      color:  white;
+      padding: 5px;
+      margin: 5px 0 15px 0;
+    }
+
+    .succes{
+      background: green;
+    }
+
+    .erreur{
+      background: red;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <h1>Veuillez complétez ces informations</h1>
+    <form id="user-form" autocomplete="on">
+      <p>
+        <label for="nom">Nom : </label>
+        <input type="text" id="nom" maxlength="30" class="u-full-width" autofocus  >
+      </p>
+      <p>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" maxlength="30" class="u-full-width"  >
+      </p>
+      <p>
+        <label for="email">email : </label>
+        <input type="email" id="email" class="u-full-width" >
+      </p>
+
+      <p>
+        <label for="motdepasse1">Mot de passe :</label>
+        <input type="password" id="motdepasse1" class="u-full-width"  >
+      </p>
+
+      <p>
+        <label for="motdepasse2">Entrez le mot de passe à nouveau : </label>
+        <input type="password" id="motdepasse2" class="u-full-width"  >
+      </p>
+
+      <input type="submit" value="Valider" class="button-primary u-full-width">
+    </form>
+
+  </section>
+  <table class="container">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>email</th>
+      </tr>
+    </thead>
+    <tbody id="data-list">
+
+    </tbody>
+
+
+  </table>
+
+  <script src="connexion.js"></script>
+</body>
+
+</html>
